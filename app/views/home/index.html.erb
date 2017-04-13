@@ -1,6 +1,6 @@
 <h1>Home#index</h1>
-<% if @user %>
+<% if user_signed_in? %>
 	<%= link_to 'logout', '/logout'%>
-	<p> Welcome <%= @user.email %> </p>
+	<p> Welcome <%= current_user.email %> </p>
 	<% end %>
 	<%= %>
