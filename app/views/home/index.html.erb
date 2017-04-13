@@ -1,0 +1,6 @@
+<h1>Home#index</h1>
+<% if @user %>
+	<%= link_to 'logout', '/logout'%>
+	<p> Welcome <%= @user.email %> </p>
+	<% end %>
+	<%= %>
