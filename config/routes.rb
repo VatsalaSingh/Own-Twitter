@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   post '/signup' => 'authentication_controller#signup'
 
   get '/logout'=> 'authentication_controller#logout'
+
+  post '/create_tweet'=>'home#create_tweet'
 end
