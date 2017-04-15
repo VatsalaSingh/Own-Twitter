@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   get '/logout'=> 'authentication_controller#logout'
 
   post '/create_tweet'=>'home#create_tweet'
+
+  post '/like'=> 'home#like'
 end

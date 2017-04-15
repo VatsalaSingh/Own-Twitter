@@ -1,7 +1,8 @@
 class HomeController < ApplicationController
 	before_action :authenticate_user
 	def index
-		@tweets=Tweet.includes(:user).all.order(created_at: :desc).limit(50)
+		@tweets=Tweet.includes(:user, :likes).all.order(created_at: :desc).limit(50)
+		
 	end
 
 	def create_tweet
@@ -10,7 +11,16 @@ class HomeController < ApplicationController
 	end
 
 	def like
-	end
+	  	tweet_id = params[:tweet_id]
+	  	like = current_user.likes.where(tweet_id: tweet_id).first
+	  	if like 
+	  		like.destroy
+	  	else
+	  		current_user.likes.create(tweet_id: tweet_id)
+	  	end
+
+  	redirect_to '/'
+  end
 
 	def follow
 	end
