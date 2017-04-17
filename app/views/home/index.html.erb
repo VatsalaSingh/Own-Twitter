@@ -9,8 +9,15 @@
 <%= submit_tag "Create Tweet"%>
 <% end %>
 
+<%= form_tag '/', method: :get do %>
+
+<%= text_field_tag 'search' %>
+<br>
+<%= submit_tag 'search' %>
+ <% end %>
 
 <% @tweets.each do |tweet| %>
  <%= render 'tweet', :tweet => tweet %>
  
  <% end %>
+

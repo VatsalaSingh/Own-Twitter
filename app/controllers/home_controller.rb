@@ -2,8 +2,15 @@ class HomeController < ApplicationController
   before_action :authenticate_user
 
 
+ 
   def index
-  	@tweets = current_user.feed
+    @tweets = current_user.feed
+    search = params[:search]
+    if search
+      query = "content like '%#{search}%' "
+      @tweets = @tweets.where(query)
+    end
+
   end
 
   def create_tweet
