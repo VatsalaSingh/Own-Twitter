@@ -34,3 +34,19 @@ body{
 	display: inline-block;
 
 }
+
+
+.floatingTop{
+	font-size: 48px;
+	position: fixed;
+	right: 18px;
+	height: 30px;
+	bottom:38px;
+    overflow: hidden;
+}
+
+.floatingTop a {
+	text-decoration: none;
+	background-color: black;
+	color: white;
+}
