@@ -50,3 +50,11 @@ body{
 	background-color: black;
 	color: white;
 }
+
+a{
+	color:hsla(6, 89%, 59%,1);
+}
+
+a:hover{
+	color:hsla(6, 89%, 30%,1);
+}
