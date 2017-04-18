@@ -10,6 +10,20 @@ header{
 }
 
 
+footer{
+	background-color:white;
+	padding:8px;
+	position:fixed;
+	width:100%;
+	height:18px;
+	bottom:0;
+}
+
+
+.logout{
+	text-align: right;
+}
+
 //for all tweets
 .tweets{
 	border-top: 1 px solid lightgrey;

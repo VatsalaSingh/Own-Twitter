@@ -2,8 +2,11 @@
 
 <header>
 	<div id="userDetails"> <% if user_signed_in? %>
-	<%= link_to 'logout', '/logout'%>
-	<p> Welcome <%= current_user.email %> </p>
+	
+	<p> Welcome, <%= current_user.email %> </p>
+	<div id="logout">
+		<%= link_to 'logout', '/logout'%>
+	</div>
 	<% end %>
 	
 </div>
