@@ -6,6 +6,11 @@ header{
 	background-color:white;
 	padding:8px;
 	border-bottom: 1px solid grey;
+	display:flex;
+	justify-content:space-between;
+	padding-right:12px;
+	padding-left:12px;
+	box-sizing:border-box;
 	
 }
 
@@ -62,3 +67,7 @@ footer{
 	font-color: #1b95e0;
 }
 
+
+.logo>i{
+	color:skyblue;
+}

@@ -1,7 +1,17 @@
+<div class="actions inline">
+	<a href="/">
+		<i class="fa fa-home" aria-hidden="true"></i>
+	</a>
+</div>
+
+
+<div class="logo inline">
+	<i class="fa fa-twitter" aria-hidden="true"></i>
+</div>
 
 
 <header>
-	<div id="userDetails"> <% if user_signed_in? %>
+	<div id="userDetails inline"> <% if user_signed_in? %>
 	
 	<p> Welcome, <%= current_user.email %> </p>
 	<div id="logout">
