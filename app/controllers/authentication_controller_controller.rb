@@ -1,4 +1,10 @@
 class AuthenticationControllerController < ApplicationController
+
+
+end
+
+=begin
+
 	def signin_get
 	end
 
@@ -45,4 +51,5 @@ class AuthenticationControllerController < ApplicationController
 		session[:user_id]=nil
 		return redirect_to '/'
 	end
-end
+=end
+

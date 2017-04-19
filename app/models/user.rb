@@ -1,4 +1,9 @@
 class User < ActiveRecord::Base
+
+
+
+
+   devise :database_authenticatable, :registerable, :confirmable, :recoverable, stretches: 12
 	has_many :tweets
    has_many :likes
    has_many :follower_mappings, class_name: 'FollowMapping', foreign_key: 'followee_id'
